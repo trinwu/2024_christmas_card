@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <!-- Use UTF character set, a good idea with any webpage -->
+  	    <meta charset="UTF-8" />
+
+        <!-- Set viewport so page remains consistently scaled w narrow devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Glass Christmas Card</title>
+
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+      
+        <!-- Google Poppins Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card" onclick="flipCard()">
+                <div class="front">
+                    <img src="snowman-image.png" alt="Snowman">
+                </div>
+                <div class="back">
+                    <h2>Merry Christmas</h2>
+                    <p>Will! What a joy and blessing it's been to be able to serve alongside such a faithful brother in Christ these past couple years! It's been such an encouragment seeing you grow in your faith and love. I love hearing about all the ways God is working in your life and in the life of those around you and how God always draws you back to Him despite the hardships you face. You've truly been a great example of a loving and humble servant of God, and I pray that God may continue using you to show Christ's love to all those around you. Thank you for leading us as our CC admin. It's definitely not easy, but you've done so well, always initiating and asking the hard questions and drawing us back to our mission and purpose. You have poured out so much love for this ministry, and I know God will continue to give you the strength to do so wherever He leads you. I pray that God gives you discernment in the questions you have about the rest of the year and that you continually seek Him first in all that you do. He has wonderful plans for you this year. Let's continue growing God's kingdom together! May your winter break be full of love and laughter :D</p>
+                    <div class="snow"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function flipCard() {
+                const card = document.querySelector('.card');
+                card.classList.toggle('flipped');
+            }
+        </script>
+    </body>
+</html>
